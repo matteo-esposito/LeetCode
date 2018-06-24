@@ -1,6 +1,9 @@
 public class ReverseString {
 
-    /* Write a function that takes a string as input and returns the string reversed. */
+    /* Problem 344
+       Write a function that takes a string as input and returns the string reversed. */
+
+    /* https://leetcode.com/problems/reverse-string/description/ */
 
     public String reverseString(String s) {
 
