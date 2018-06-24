@@ -4,7 +4,7 @@
 //
 // This program will verify the primality of any positive integer.
 // --------------------------------------------------------------------
-
+ 
 import java.util.Scanner;
 
 public class IsPrime {

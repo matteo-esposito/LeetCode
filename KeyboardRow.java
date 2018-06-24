@@ -1,6 +1,6 @@
-class Solution {
+class Solution { 
 
-	/* Problem 500 
+	/* Problem 500
 	   Given a List of words, return the words that can be typed
 	   using letters of alphabet on only one row's of American keyboard */
 

@@ -5,7 +5,7 @@ public class ReverseString {
 
     /* https://leetcode.com/problems/reverse-string/description/ */
 
-    public String reverseString(String s) {
+    public String reverseString(String s)  {
 
         char[] arr = s.toCharArray();
         int i = 0, j = s.length() - 1;
