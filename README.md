@@ -1,2 +1,4 @@
 # LeetCode
-Coding challenges
+Coding challenges from ```leetcode.com```
+
+User: `Misotopes`
