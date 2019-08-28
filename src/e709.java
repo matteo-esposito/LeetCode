@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class p709 {
+public class e709 {
 
     public static void main(String[] args) {
         System.out.println(toLowerCase("QWERhello"));
