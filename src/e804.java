@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class e1021 {
+public class e804 {
 
     public static int uniqueMorseRepresentations(String[] words) {
 

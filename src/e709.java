@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class e709 {
 
     public static void main(String[] args) {
