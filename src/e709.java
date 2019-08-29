@@ -16,4 +16,5 @@ public class e709 {
 
         return String.join("", word);
     }
+
 }
