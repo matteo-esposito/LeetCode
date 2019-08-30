@@ -1,6 +1,3 @@
-import java.util.Arrays;
-import java.util.HashSet;
-
 public class e387{
 
     public static int firstUniqChar(String s) {

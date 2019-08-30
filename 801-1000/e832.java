@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class e832 {
 
     public static int[][] flipAndInvertImage(int[][] A) {

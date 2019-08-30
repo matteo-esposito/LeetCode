@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class e1108 {
 
     public static String defangIPaddr(String address) {
