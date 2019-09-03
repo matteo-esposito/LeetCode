@@ -20,4 +20,5 @@ def commonChars(A):
 
     return sol
 
-commonChars(["bella","label","roller"])
+print(commonChars(["bella","label","roller"]))
+print(commonChars(["cool","lock","cook"]))
