@@ -12,29 +12,20 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        # take vals and put into list
-        # find sum
-        num1 = []
-        num2 = []
-        while l1:
-            num1.append(l1.val)
-            l1 = l1.next
-        while l2:
-            num2.append(l2.val)
-            l2 = l2.next
+        dummy_ret = ListNode(0)
+        mod = dummy_ret
+        carry = 0
 
-        num1.reverse()
-        num2.reverse()
-
-        val1 = ""
-        val2 = ""
-        for n in num1:
-            val1 += str(n)
-        for n in num2:
-            val2 += str(n)
+        while l1 or l2 or carry != 0:
+            current_total = carry
+            if l1:
+                current_total += l1.val
+                l1 = l1.next
+            if l2:
+                current_total += l2.val
+                l2 = l2.next
+            mod.next = ListNode(current_total % 10) # Start by modifying the 'next' node from the head since we want to return the dummy linkedlist.next which is where all of our modifications are being 'appended' to.
+            carry = current_total // 10
+            mod = mod.next
         
-        sol = str(int(val1) + int(val2))
-        
-        # TODO
-
-        return tree
+        return dummy_ret.next
