@@ -10,17 +10,25 @@ class Solution(object):
         :type root: Node
         :rtype: List[List[int]]
         """
+        return bfs(root)
 
-        if not root:
-            return visited
-
-        visited = []
-        stack = [root]
-
-        while stack:
+    def bfs(root):
+        out = []
+        
+        if root:
+            out = [root.val] 
+        
+        if root:
             temp = []
-            current = stack.pop(0)
-            if current:
-                visited.append(current.val)
-                stack = current.children + stack
-        return visited
+            for chlid in root.children:
+                temp.append(child)
+
+            out.append(temp)
+
+            for chlid in root.children:
+                bfs(child)
+        
+        return out
+            
+            
+

@@ -1,15 +1,15 @@
-import collections
-
 def bfs_iterative(graph, root):
-    visited, queue = set([root]), collections.deque([root])
+    queue = [root]
+    visited = set(root)
+    
     while queue:
-        vertex = queue.popleft()
-        print(vertex, end=" ")
-        neighbours = graph[vertex]
-        for node in neighbours:
+        vertex = queue.pop()
+        for node in graph[vertex]:
             if node not in visited:
-                visited.add(node)
                 queue.append(node)
+                visited.add(node)
+    
+    return visited
 
 if __name__ == '__main__':
     graph = {'A': set(['B', 'C']),
@@ -18,4 +18,4 @@ if __name__ == '__main__':
          'D': set(['B']),
          'E': set(['B', 'F']),
          'F': set(['C', 'E'])}
-    bfs_iterative(graph, 'A')
+    print(bfs_iterative(graph, 'A'))
